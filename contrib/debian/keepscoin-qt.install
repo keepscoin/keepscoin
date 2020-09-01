@@ -1,0 +1,6 @@
+usr/local/bin/keepscoin-qt usr/bin
+share/pixmaps/kpcoin32.xpm usr/share/pixmaps
+share/pixmaps/kpcoin16.xpm usr/share/pixmaps
+share/pixmaps/kpcoin128.png usr/share/pixmaps
+debian/keepscoin-qt.desktop usr/share/applications
+debian/keepscoin-qt.protocol usr/share/kde4/services/

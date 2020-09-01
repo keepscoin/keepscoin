@@ -1,0 +1,26 @@
+# /etc/conf.d/keepscoind: config file for /etc/init.d/keepscoind
+
+# Config file location
+#KPCOIND_CONFIGFILE="/etc/keepscoin/keepscoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $KPCOIND_USER)
+#KPCOIND_PIDDIR="/var/run/keepscoind"
+
+# What filename to give the pidfile
+#KPCOIND_PIDFILE="${KPCOIND_PIDDIR}/keepscoind.pid"
+
+# Where to write keepscoind data (be mindful that the blockchain is large)
+#KPCOIND_DATADIR="/var/lib/keepscoind"
+
+# User and group to own keepscoind process
+#KPCOIND_USER="keepscoin"
+#KPCOIND_GROUP="keepscoin"
+
+# Path to keepscoind executable
+#KPCOIND_BIN="/usr/bin/keepscoind"
+
+# Nice value to run keepscoind under
+#KPCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+KPCOIND_OPTS=""

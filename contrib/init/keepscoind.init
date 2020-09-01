@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  keepscoind The KEEPsCoin core server.
+#
+#
+# chkconfig: 345 80 20
+# description: keepscoind
+# processname: keepscoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/keepscoind, see below
+if [ -f /etc/sysconfig/keepscoind ]; then
+        . /etc/sysconfig/keepscoind
+fi
+
+RETVAL=0
+
+prog=keepscoind
+# you can override the lockfile via KPCOIND_LOCKFILE in /etc/sysconfig/keepscoind
+lockfile=${KPCOIND_LOCKFILE-/var/lock/subsys/keepscoind}
+
+# keepscoind defaults to /usr/bin/keepscoind, override with KPCOIND_BIN
+kpcoind=${KPCOIND_BIN-/usr/bin/keepscoind}
+
+# keepscoind opts default to -disablewallet, override with KPCOIND_OPTS
+kpcoind_opts=${KPCOIND_OPTS}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $kpcoind $kpcoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

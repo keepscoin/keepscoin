@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=KEEPsCoin
+Comment=KEEPsCoin P2P Cryptocurrency
+Exec=keepscoin-qt %u
+Terminal=false
+Type=Application
+Icon=keepscoin128
+MimeType=x-scheme-handler/keepscoin;
+Categories=Office;Finance;
+Name[en_US]=keepscoin-qt.desktop

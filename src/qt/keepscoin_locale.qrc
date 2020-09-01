@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/keepscoin_bg.qm</file>
+        <file alias="ca">locale/keepscoin_ca.qm</file>
+        <file alias="cs">locale/keepscoin_cs.qm</file>
+        <file alias="da">locale/keepscoin_da.qm</file>
+        <file alias="de">locale/keepscoin_de.qm</file>
+        <file alias="en">locale/keepscoin_en.qm</file>
+        <file alias="en_US">locale/keepscoin_en_US.qm</file>
+        <file alias="es">locale/keepscoin_es.qm</file>
+        <file alias="fi">locale/keepscoin_fi.qm</file>
+        <file alias="fr_FR">locale/keepscoin_fr_FR.qm</file>
+        <file alias="it">locale/keepscoin_it.qm</file>
+        <file alias="ja">locale/keepscoin_ja.qm</file>
+        <file alias="ko_KR">locale/keepscoin_ko_KR.qm</file>
+        <file alias="nl">locale/keepscoin_nl.qm</file>
+        <file alias="pl">locale/keepscoin_pl.qm</file>
+        <file alias="pt">locale/keepscoin_pt.qm</file>
+        <file alias="pt_BR">locale/keepscoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/keepscoin_ro_RO.qm</file>
+        <file alias="ru">locale/keepscoin_ru.qm</file>
+        <file alias="sk">locale/keepscoin_sk.qm</file>
+        <file alias="sv">locale/keepscoin_sv.qm</file>
+        <file alias="tr">locale/keepscoin_tr.qm</file>
+        <file alias="uk">locale/keepscoin_uk.qm</file>
+        <file alias="zh_CN">locale/keepscoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/keepscoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

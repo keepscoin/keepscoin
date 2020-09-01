@@ -1,0 +1,26 @@
+[Unit]
+Description=KEEPsCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=keepscoin
+Group=keepscoin
+
+Type=forking
+PIDFile=/var/lib/keepscoind/keepscoind.pid
+
+ExecStart=/usr/bin/keepscoind -daemon -pid=/var/lib/keepscoind/keepscoind.pid \
+          -conf=/etc/keepscoin/keepscoin.conf -datadir=/var/lib/keepscoind
+
+ExecStop=-/usr/bin/keepscoin-cli -conf=/etc/keepscoin/keepscoin.conf \
+         -datadir=/var/lib/keepscoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
