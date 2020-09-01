@@ -14,19 +14,8 @@ More information at [kpc.org](http://www.kpc.org)
 Please reach out at info@kpc.org
 
 ### Coin Specs
-| Block Time                  | 60 Seconds      |
-| Max Coin Supply (PoW Phase) | 500,000 KPC    |
-| Max Coin Supply (PoS Phase) | 20,500,000 KPC |
-| Premine                     | 500,000 KPC    |
+| Block Time                  | 60 Seconds           |
+| Max Coin Supply (PoW Phase) | 3,000,000,000 KPC    |
+| Max Coin Supply (PoS Phase) | 5,000,000,000 KPC    |
+| Premine                     | 3,000,000,000 KPC    |
 
-### Reward Distribution
-
-| **Block Height** | **Masternodes**  | **PoS**          |
-|------------------|------------------|------------------|
-| 201-5000         | 85% (0.85 KPC)  | 15% (0.15 KPC)   |
-| 5001-25000       | 85% (25.5 KPC)  | 15% (4.5 KPC)     |
-| 25001-100000     | 85% (17 KPC)    | 15% (3 KPC)     |
-| 100001-1050000   | 85% (8.5 KPC)   | 15% (1.5 KPC)     |
-| 1050001-2100000  | 85% (4.25 KPC)  | 15% (0.75 KPC)   |
-| 2100001-3150000  | 85% (2.13 KPC)  | 15% (0.375 KPC)  |
-| 3150001-Infinite | 85% (1.06 KPC)  | 15% (0.195 KPC)  |
