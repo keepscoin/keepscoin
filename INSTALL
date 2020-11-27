@@ -11,3 +11,21 @@ Always verify the signatures and checksums.
 See doc/build-*.md for instructions on building keepscoind,
 the intended-for-services, no-graphical-interface, reference
 implementation of KEEPsCoin.
+
+---------------------------------------------------------------------------------
+
+Building KEEPsCoin Static
+
+Use the autogen script to prepare the build environment.
+    cd depends
+    make
+    cd ..
+    ./autogen.sh
+    ./configure --prefix=pwd/depends/x86_64-pc-linux-gnu
+    make
+
+Always verify the signatures and checksums.
+
+See doc/build-*.md for instructions on building keepscoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of KEEPsCoin.
