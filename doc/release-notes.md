@@ -1,68 +1,86 @@
-(note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
+KEEPSCoin Core version 1.3.0.1
+==========================
 
-KEEPsCoin Core version *version* is now available from:
+Release is now available from:
 
-  <https://github.com/keepscoin-official/keepscoin/releases>
+  <https://www.keepscoin.com/>
 
-This is a new major version release, including various bug fixes and
-performance improvements, as well as updated translations.
+This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/keepscoin-official/keepscoin/issues>
+  <https://github.com/keepscoin/keepscoin/issues>
+ 
+
 
 Mandatory Update
-==============
-
+=========================
 
 How to Upgrade
-==============
+--------------
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/KEEPsCoin-Qt (on Mac) or keepscoind/keepscoin-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely
+shut down (which might take a few minutes for older versions), copy over sanacoind on Linux.
+If you upgrade after version 1.3.0.1 activation and you were
+using version < 1.3.0.1 you will have to reindex (start with -reindex -chainstate
+or -reindex) to make sure your wallet has all the new data synced. Upgrading from
+version 1.2.1.0 should not require any additional actions.
 
 Compatibility
-==============
+-----------------
 
-KEEPsCoin Core is extensively tested on multiple operating systems using
-Linux, macOS 10.10+, and Windows 7 and later.
+KEEPSCoin Core is tested on Ubuntu 16.04 Lts.
 
-KEEPsCoin Core should also work on most other Unix-like systems but is not
-frequently tested on them.
+KEEPSCoin Core should also work on most other Unix-like systems but is not frequently tested on them.
 
-Notable Changes
+
+Notable changes
 ===============
 
-Random-cookie RPC authentication
----------------------------------
+Performance improvements
+------------------------
+Slow startup times were observed in older versions. This was due to sub-optimal handling of old
+deterministic masternode lists which caused the loading of too many lists into memory. This should be
+fixed now.
 
-When no `-rpcpassword` is specified, the daemon now uses a special 'cookie'
-file for authentication. This file is generated with random content when the
-daemon starts, and deleted when it exits. Its contents are used as
-authentication token. Read access to this file controls who can access through
-RPC. By default it is stored in the data directory but its location can be
-overridden with the option `-rpccookiefile`.
+Fixed excessive memory use
+--------------------------
+Multiple issues were found which caused excessive use of memory in some situations, especially when
+a full reindex was performed, causing the node to crash even when enough RAM was available. This should
+be fixed now.
 
-This is similar to Tor's CookieAuthentication: see
-https://www.torproject.org/docs/tor-manual.html.en
+Fixed out-of-sync masternode list UI
+------------------------------------
+The masternode tab, which shows the masternode list, was not always up-to-date as it missed some internal
+updates. This should be fixed now.
 
-This allows running keepscoind without having to do any manual configuration.
+Fixed governance votes pruning for invalid masternodes 
+------------------------------------------------------
+A community member reported a possible attack that involves DoSing masternodes to force the network
+to prune all governance votes from this masternodes. This could be used to manipulate vote outcomes.
 
+This version includes a fix that requires to have at least 51% masternodes to upgrade to
+1.3.0.0, after which superblock trigger voting will automatically fix the discrepancies between
+old and new nodes. This also means that we will apply included PoS system.
+at least 51% of masternodes have upgraded to 1.3.0.1.
 
-*version* Change log
-=================
-
-Detailed release notes follow. This overview includes changes that affect
-behavior, not code moves, refactors and string updates. For convenience in locating
-the code changes and accompanying discussion, both the pull request and
-git merge commit are mentioned.
-
-### Broad Features
-### P2P Protocol and Network Code
-### GUI
-### Miscellaneous
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
+- Momoko garza (Project Coin Main Dev)
+- Arnold Carl (Project Coin Dev Assistant)
+
+
+As well as everyone that submitted issues and reviewed pull requests.
+
+Older releases
+==============
+
+KEEPSCoin tree 1.3.0.1 was a fork of Bitcoin Green 1.3.1, original name was Bitcoin Green
+which was first released on Aug/22/2018.
+
+KEEPSCoin tree 1.3.0.1 was the open source implementation of masternodes based on
+the 1.2.1 tree and was first released on July/05/2019.
