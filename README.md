@@ -1,6 +1,6 @@
 # What is an KEEPs And K-VERSE(KVERSE)?
 
-* **Mainnet** : 0x0AB39AC604f992aAeC3C36dE337c3CD3917a7d26  
+* **Mainnet** : 0xbe5166e8e8A5CB801F09A6a0a46C42b7c27bE755  
 * **Main Features**: Run on the Binance blockchain  
 * **Distribution(20%)**: 600,000,000  
 * **Development(20%)**: 600,000,000  
