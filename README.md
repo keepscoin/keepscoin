@@ -1,93 +1,66 @@
-# KEEPSCoin Core integration/staging repository
+# What is an KEEPs And K-VERSE(KVERSE)?
 
-[![Build Status](https://api.travis-ci.org/keepscoin/keepscoin.svg?branch=master)](https://travis-ci.org/keepscoin/keepscoin) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+* **Mainnet** : 0x0AB39AC604f992aAeC3C36dE337c3CD3917a7d26  
+* **Main Features**: Run on the Binance blockchain  
+* **Distribution(20%)**: 600,000,000  
+* **Development(20%)**: 600,000,000  
+* **Marketing(20%)**: 600,000,000  
+* **Business(10%)**: 300,000,000  
+* **Liquidity(20%)**: 600,000,000  
+* **Fund(5%)**: 150,000,000  
+* **ETC(5%)**: 150,000,000  
 
-## What is KEEPSCoin?
+# COIN SPEC
 
-KEEPSCoin (KPC) is a sustainable cryptocurrency modeled after Satoshi Nakamoto’s vision for Bitcoin. 
-It is a decentralized, peer-to-peer transactional currency designed to offer a solution to the problem posed by the exponential increase in energy consumed by Bitcoin and other proof-of-work currencies. 
-Proof-of-work mining is environmentally unsustainable due to the electricity used by high-powered mining hardware. 
-KEEPSCoin utilizes the Tier Protocol, an energy efficient proof-of-stake algorithm inspired by BITG/DASH, can be mined on any computer, and will never require specialized mining equipment. 
-The Tier Protocol offers a simple solution to Bitcoin sustainability issues and provides a faster, more scalable blockchain that is better suited for daily transactional use.
-Fast transactions featuring guaranteed zero confirmation transactions, we call it SwiftTX.
-Decentralized blockchain voting providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of 1,000,000 KPC.
-
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
-- Decentralized blockchain voting providing for consensus based advancement of the current Masternode
-  technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 100,000  KPC.
-
-More information at [keepscoin.net](https://www.keepscoin.net)
-
-Please reach out at KEEPSCoin. manager@keepscoin.com
-
-
-KEEPSCoin Core integration/staging repository
-=====================================
-
-KEEPSCoin is a brand new digital currency that combines all the positive aspects of successful digital currencies, while taking into account their flaws and weak points.
-The project brings tangible benefits not only to the digital world but also to the real one.
+* **Nominal price**: 0.04$  
+* **Emission rate**: No Further tokens will be created  
+* **Token private sale**: 20% (Distribution)  
+* **Token Liquidity**: 20% (Planning)  
+* **Soft cap**: BNB 1,000  
+* **Hard cap**: BNB 6,000
+* **Token format**: BEP-20  
+* **Currency Accepted**: BNB, BTC
 
 
-### Coin Specs
+# Introduction
 
-<table>
-<tr><td>Name & ticker</td><td>KEEPSCoin / KPC</td></tr>
-<tr><td>Consensus algorithm</td><td>POS</td></tr>
-<tr><td>POS phase duration</td><td>2,000 blocks</td></tr>
-<tr><td>POS block reward</td><td>200 KPC</td></tr>
-<tr><td>Instamine protection</td><td>First 2000 blocks</td></tr>
-<tr><td>Hashing algorithm</td><td>Keccak</td></tr>
-<tr><td>Estimated KEEPSCoin supply during POW</td><td>3,000,000,000 KPC</td></tr>
-<tr><td>POS starting block</td><td>2,001 block</td></tr>
-<tr><td>POS phase duration</td><td>5,000,000,000 KPC</td></tr>
-<tr><td>POS block reward distribution</td><td>SeeSaw</td></tr>
-<tr><td>Premine</td><td>3,000,000,000 KPC</td></tr>
-<tr><td>Blocksize</td><td>1 MB</td></tr>
-<tr><td>Blocktime average</td><td>1 min (DGW3)</td></tr>
-<tr><td>Number of transaction confirmations</td><td>6</td></tr>
-<tr><td>Maturity</td><td>288 confirmations</td></tr>
-</table>
+The KEEPs Platform aims to build an ecosystem platform for a new concept culture and art industry that  
+encompasses the entire art industry such as music, film, and drama. KEEPs aims to provide a space where  
+anyone in the world can participate in and run the culture and art industry by providing a platform that can  
+be used in a variety of cultural and arts fields.  
+KEEPs is a content art platform developed on the basis of Blockchain. We want to build the ecosystem  
+by stably systematizing the entire culture and art industry based on Blockchain, rather than simply using  
+Cryptocurrency. From the past, humans have used various forms of expression to express their inner  
+feelings and convey various meanings. This is human instinct, and has existed with any age and society in  
+which mankind survives. This act of expression has grown through the Mesopotamian civilization, leaving a  
+cultural record after mankind painted on the walls of the caves of Lasco and Altamira. Since then, numerous  
+works of culture and art have had a tremendous impact on human life and the life of society as a whole in  
+the history of mankind and have become a part of our lives now.  
+KEEPs aims to create a creative ecosystem in which culture and arts can be assimilated in our work  
+inheritance to create our own culture, rather than having a distribution structure through a simple system  
+or virtual currency
+**KEEPs is a content art platform developed on the basis of Blockchain.**  
+We want to build the ecosystem by stably systematizing the entire culture and art industry based on Blockchain.   
+We aim to create a creative ecosystem in which culture and arts can be assimilated in our work inheritance to create our own culture,  
+rather than having a distribution structure through a simple system.
 
+# K-VERSE: Media Metaverse Platform
 
+K-verse is creating a new Metaverse world.  
+Core hub service for K culture and Asian cultural contents.
 
-## License
+# White-Paper
 
-BitGreen Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+[KEEPs White Paper](https://www.keepscoin.com/data/keeps_whitepaper_v1011_english.pdf)
 
-## Development Process
+# Websites
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/keepscoin/keepscoin/tags) are created
-regularly to indicate new official, stable release versions of BitGreen Core.
+**K-VERSE platform**: https://www.k-verse.io/
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
-and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
+**Twitter**: https://twitter.com/KEEPscoin
 
-## Testing
+**Telegram**: https://t.me/keeps_coin
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+**Facebook**: https://www.facebook.com/KeepsBlockchain
 
-### Automated Testing
-
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and macOS, and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+**LinkedIn**: https://www.linkedin.com/company/keeps-blockchain
